@@ -36,6 +36,8 @@ class Perceptron:
 
 # noinspection DuplicatedCode,PyShadowingNames,PyPep8Naming
 def plot_decision_regions(X, y, classifier, resolution=0.02):
+    import matplotlib.pyplot as plt
+
     markers = ('o', 's', '^', 'v', '<')
     colors = ('red', 'blue', 'lightgreen', 'gray', 'cyan')
     cmap = ListedColormap(colors[:len(np.unique(y))])
